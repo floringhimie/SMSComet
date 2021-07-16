@@ -64,7 +64,7 @@ $db = mysql_select_db($dbase , $connection) or die ("Can't select database.");
 	
 	if($_SERVER['REQUEST_METHOD'] === 'POST')
     {
-		if(!get_magic_quotes_gpc()) {
+		/*if(!get_magic_quotes_gpc()) {
 			$_POST['deviceId'] = addslashes($_POST['deviceId']);
 			$_POST['deviceSecret'] = addslashes($_POST['deviceSecret']);
 			$_POST['action'] = addslashes($_POST['action']);
@@ -72,7 +72,7 @@ $db = mysql_select_db($dbase , $connection) or die ("Can't select database.");
 			$_POST['number'] = addslashes($_POST['number']);
 			$_POST['message'] = addslashes($_POST['message']);
 			$_POST['messageId'] = addslashes($_POST['messageId']);
-		}
+		}*/
 		if($_POST['deviceId'] == '') {
 			exit;
 		} else {
